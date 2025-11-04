@@ -4,7 +4,7 @@ import { LuGithub } from "react-icons/lu";
 import { LuTwitter } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
 import Image from "next/image";
-import hero from "@/public/profile.jpg";
+import hero from "@/public/Hero Image.png";
 import back from "@/public/back.png";
 
 const Hero = () => {
@@ -34,20 +34,14 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="mt-10 lg:mt-0 right_part w-[300px] h-[350px]  relative ">
+            <div className="mt-10 lg:mt-0 right_part w-[320px] lg:w-[545px] h-100 lg:h-[496px]  relative ">
               <Image
                 src={hero}
                 alt="hero_err"
-                width={300}
-                height={350}
-                className="rounded-5xl"
+                fill={true}
+               
               />
-              {/* <Image
-                src={back}
-                alt="err"
-                layout="fill"
-                className="absolute -top-[20px] -left-[30px] object-cover z-[-1]"
-              /> */}
+            
             </div>
           </div>
         </div>

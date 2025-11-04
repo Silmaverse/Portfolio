@@ -1,59 +1,73 @@
-import React from 'react'
-import { MdChevronRight } from 'react-icons/md'
+import React from "react";
+import CommonButton from "@/app/utill/CommnonButton";
+import Text from "@/app/utill/Text";
 
 const Experience = () => {
   return (
     <>
-    <section id='experience'  className=' mt-44 bg-[#FBFBFB] py-[104px]'>
-
+      <section id="experience" className=" mt-44 bg-[#FBFBFB] py-[104px]">
         <div className="container">
-             <h2 className='text-[12px] font-Inter font-medium text-heroname '><span className='inline-block w-4 h-0.5 text-[#D9D9D9]'>--</span>career path</h2>
-                            <h2 className='text-4xl font-Jakatra font-bold text-primary mt-2 '> Work Experices
-             </h2>
 
+          <Text variant="h3" ><Text variant="span">--</Text> Career path</Text>
 
-              <div className="flex gap-[137px] items-center">
-             <div className="w-[281px] mt-20 left-part">
+          <Text variant="h2">
+           
+            Work Experices
+          </Text>
 
-              <button className='w-full h-[52px] px-8 hover:bg-white text-base font-Inter font-medium  text-primary hover:text-brand flex items-center justify-between '> Apple  <MdChevronRight className='text-white hover:text-brand' /> </button>
+          <div className="flex flex-wrap gap-[137px] items-center">
+            <div className="w-[281px] mt-20 left-part">
+              <CommonButton CompanyName={"Creative It"} />
+              <CommonButton CompanyName={"NextZenIt"} />
+              <CommonButton CompanyName={"TimeDoor Acadmey"} />
+              
+            </div>
 
-              <button className='w-full h-[52px] px-8  hover:bg-white text-base font-Inter font-medium text-primary hover:text-brand flex items-center justify-between '>
-                 Microsoft <MdChevronRight className='text-white hover:text-brand' /> </button>
+            <div className="right_part">
+              <h2 className="text-[18px] font-Jakatra font-medium text-primary">
+                Front-end Developer Apple .Inc
+              </h2>
+              <p className="text-sm font-Inter font-normal text-heroname mt-2 ">
+                California, United States
+              </p>
+              <p className="text-sm font-Inter font-normal text-heroname mt-4">
+                Nov 2020 - Present · Full-time
+              </p>
 
-                  <button className='w-full h-[52px] px-8  hover:bg-white text-base font-Inter font-medium text-primary hover:text-brand flex items-center justify-between '>
-                 Facebook <MdChevronRight className='text-white hover:text-brand' /> </button>
-
-                  <button className='w-full h-[52px] px-8  hover:bg-white text-base font-Inter font-medium text-primary hover:text-brand flex items-center justify-between '>
-                 Slack <MdChevronRight className='text-white hover:text-brand' /> </button>
-
-
-             </div>
-
-             <div className="right_part">
-                <h2 className='text-[18px] font-Jakatra font-medium text-primary'>Front-end Developer  Apple .Inc</h2>
-                <p className='text-sm font-Inter font-normal text-heroname mt-2 '>California, United States</p>
-                <p className='text-sm font-Inter font-normal text-heroname mt-4'>Nov 2020 - Present · Full-time</p>
-
-                <div className="flex gap-4 items-center mt-4"> 
-
-
-                    <div className="inline py-1 px-2  border border-[#F1F1F1] rounded-sm text-[12px] text-heroname font-Inter font-medium">Swift</div>
-
-                    <div className="inline py-1 px-2  border border-[#F1F1F1] rounded-sm text-[12px] text-heroname font-Inter font-medium">Go</div>
+              <div className="flex gap-4 items-center mt-4">
+                <div className="inline py-1 px-2  border border-[#F1F1F1] rounded-sm text-[12px] text-heroname font-Inter font-medium">
+                  Swift
                 </div>
 
+                <div className="inline py-1 px-2  border border-[#F1F1F1] rounded-sm text-[12px] text-heroname font-Inter font-medium">
+                  Go
+                </div>
+              </div>
 
-                    <div className="border border-[#F1F1F1] mt-8 w-full"></div>
+              <div className="border border-[#F1F1F1] mt-8 w-[779px]"></div>
 
-             </div>
-             </div>
-
-
+              <div className="mt-8">
+                <Text variant={"p"} className="w-[250px]  mt-3 lg:mt-0">
+                  - Improving overall website performance for mobile users.
+                </Text>
+                <Text variant={"p"} className="w-[250px] mt-3 lg:mt-0">
+                  - Collaborate with back-end developers and web designers to
+                  improve usability
+                </Text>
+                <Text variant={"p"} className="w-[250px] mt-3 lg:mt-0">
+                  - Add voice search feature for mobile app.
+                </Text>
+                <Text variant={"p"} className="w-[250px] mt-3 lg:mt-0">
+                  - Developing an admin panel to manage contents, users,
+                  products and ...
+                </Text>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </section>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

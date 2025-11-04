@@ -30,7 +30,7 @@ const Portfolio = () => {
 
                     </div>
 
-                    <div className="images flex justify-between items-center mt-36" >
+                    <div className="images flex-wrap  gap-4 lg:gap-0 flex justify-between items-center mt-36" >
 
                         <div className="first_image relative w-[361px] h-[402px]">
                             <Image src={Portfolio1} alt='err' fill={true} />

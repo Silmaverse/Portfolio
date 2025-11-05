@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
-const CommonCard = ({spicon , title , description}) => {
+
+const CommonCard = ({spicon , title , description , animation}) => {
   return (
     <>
-      <div className="first_card w-[361px] px-[57px] py-[53px] bg-white flex flex-col gap-4 justify-center items-center rounded-lg">
+      <div className="first_card w-[361px] px-[57px] py-[53px] bg-white flex flex-col gap-4 justify-center items-center rounded-lg shadow-lg  lg:hover:scale-y-120 duration-75"
+       data-aos={animation} >
         <div className=" w-14 h-14  rounded-2xl bg-trinary flex justify-center items-center">
           <div className="image w-6 h-6 relative">
             <Image src={spicon} alt="error" fill={true} />

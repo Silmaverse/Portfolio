@@ -5,7 +5,7 @@ import Text from "@/app/utill/Text";
 const Experience = () => {
   return (
     <>
-      <section id="experience" className=" mt-44 bg-[#FBFBFB] py-[104px]">
+      <section id="experience" className=" mt-44 bg-[#f8f8f8] py-[104px]">
         <div className="container">
 
           <Text variant="h3" ><Text variant="span">--</Text> Career path</Text>
@@ -44,20 +44,20 @@ const Experience = () => {
                 </div>
               </div>
 
-              <div className="border border-[#F1F1F1] mt-8 w-[779px]"></div>
+              <div className="border border-[#F1F1F1] mt-8 lg:w-[779px]"></div>
 
               <div className="mt-8">
-                <Text variant={"p"} className="w-[250px]  mt-3 lg:mt-0">
+                <Text variant={"p"} className="w-[250px]  lg:w-full mt-3 lg:mt-0">
                   - Improving overall website performance for mobile users.
                 </Text>
-                <Text variant={"p"} className="w-[250px] mt-3 lg:mt-0">
+                <Text variant={"p"} className="w-[250px] lg:w-full mt-3 lg:mt-0">
                   - Collaborate with back-end developers and web designers to
                   improve usability
                 </Text>
-                <Text variant={"p"} className="w-[250px] mt-3 lg:mt-0">
+                <Text variant={"p"} className="w-[250px] lg:w-full mt-3 lg:mt-0">
                   - Add voice search feature for mobile app.
                 </Text>
-                <Text variant={"p"} className="w-[250px] mt-3 lg:mt-0">
+                <Text variant={"p"} className="w-[250px] lg:w-full mt-3 lg:mt-0">
                   - Developing an admin panel to manage contents, users,
                   products and ...
                 </Text>

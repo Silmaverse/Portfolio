@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
@@ -6,6 +7,7 @@ import { FiLinkedin } from "react-icons/fi";
 import Image from "next/image";
 import hero from "@/public/Hero Image.png";
 import back from "@/public/back.png";
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
@@ -17,9 +19,38 @@ const Hero = () => {
               <h2 className="text-[12px] font-Inter font-medium text-heroname">
                 -- MY NAME IS
               </h2>
+
               <h2 className="text-2xl lg:text-[44px] font-Jakatra font-bold text-primary mt-4">
-                Silma <span className="text-brand"> Subah.</span>
+                Silma <span className="text-brand"> Subah.
+
+                  <Typewriter
+                    options={{
+
+                      autoStart: true,
+                      loop: true,
+                    }}
+
+                    onInit={(typewriter) => {
+                      typewriter
+                       
+                        .pauseFor(100)
+                        .typeString('<span class="text-primary"> A  </span> <span class="text-brand">Frontend Developer</span>')
+                        .pauseFor(500)
+                        .deleteAll()
+                        .typeString('<span class="text-primary"> A pasionate </span> <span class="text-brand">Frontend Developer</span>')
+                        .pauseFor(500)
+                        .deleteAll()
+                        .start()
+                    }}
+                  />
+
+                </span>
               </h2>
+
+
+
+
+
               <p className="w-full lg:w-[538px] text-base font-Inter font-medium text-primary mt-8">
                 Creative front-end developer in enterprise companies and
                 startups. Proficient in JavaScript, NextJs, and React.
@@ -39,9 +70,9 @@ const Hero = () => {
                 src={hero}
                 alt="hero_err"
                 fill={true}
-               
+
               />
-            
+
             </div>
           </div>
         </div>

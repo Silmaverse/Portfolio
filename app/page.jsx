@@ -7,10 +7,12 @@ import Techstack from "@/app/components/Techstack"
 import Education from "@/app/components/Education"
 import ContactMe from "@/app/components/ContactMe"
 import Footer from "@/app/components/Footer"
+import Animation from "../app/components/Animation"
 
 export default function Home() {
   return (
     <>
+     <Animation/>
     <Hero/>
     <Specialized/>
     <Techstack/>

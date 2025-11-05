@@ -10,8 +10,8 @@ const Navbar = () => {
         <div className="container">
             <div className="portfolio_row flex justify-between items-center">
 
-                <div className="logo w-6 lg:w-10 h-6 lg:h-10 relative">
-                    <Image src={logo} fill={true} alt='company_logo' />
+                <div className="logo w-6 lg:w-10 h-6 lg:h-10 relative ">
+                    <Image src={logo} fill={true} alt='company_logo' style={{backgroundColor:"white"}} />
 
                 </div>
 

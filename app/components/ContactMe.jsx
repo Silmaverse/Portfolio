@@ -9,7 +9,7 @@ import Text from "@/app/utill/Text";
 const ContactMe = () => {
   return (
     <>
-      <section id="contactme" className=" mt-44 bg-[#FBFBFB] py-[104px]">
+      <section id="contactme" className=" mt-44 bg-[#f8f8f8] py-[104px]">
         <div className="container">
           <div className="contact_row flex-wrap flex justify-between items-center">
 

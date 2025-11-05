@@ -20,7 +20,7 @@ const Text = ({variant = 'p' , children , className=""}) => {
         name: "h6" , tag:"h6" , className:"text-sm font-Inter font-medium text-primary"
     },
     {
-        name:"p" ,tag:"p" ,className:"text-sm lg:text-base font-Inter font-normal text-secondary"
+        name:"p" ,tag:"p" ,className:"text-sm lg:text-base font-Inter font-normal text-primary"
     },
      {
         name:"span" ,tag:"span" ,className:"inline-block w-4 h-0.5 text-sside"
